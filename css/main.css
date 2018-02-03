@@ -1,0 +1,133 @@
+html {
+  background-color: black;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  color: white;
+}
+p {
+  font-size: 1.4rem;
+  padding-top: 2rem;
+  line-height: 130%;
+}
+p span {
+  font-weight: 300;
+}
+
+/* HERO AND LOGO */
+.hero {
+  position: fixed;
+  top: 0;
+  background: linear-gradient(
+                     rgba(20,20,20, 0.6),
+                     rgba(20,20,20, 0.6)),
+                     url(../img/macbook.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+.hero:after {
+  bottom: 6vh;
+  color: #fff;
+  content: "﹀";
+  font-size: 2.5rem;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+.logo {
+  color: white;
+  font-size: 2rem;
+  height: 30%;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  top: 36%;
+  width: 100%;
+}
+.logo span {
+  border-left: 0.1rem solid white;
+  margin-left: 2rem;
+  padding-left: 2rem;
+}
+.subtitle {
+  color: #FFC300;
+  font-size: 1.5rem;
+  top: 46%;
+  letter-spacing: 0.15rem;
+}
+ /* PAGES AND CONTENT */
+.snapshot-container {
+  height: 82.5rem;
+  margin-top: 80%;
+  background: linear-gradient(
+                     rgba(20,20,20, 0.6),
+                     rgba(20,20,20, 0.6)),
+                     url(../img/yeti.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  z-index: 1000;
+  position: relative;
+}
+.projects-container {
+  height: 82.5rem;
+  background: linear-gradient(
+                     rgba(20,20,20, 0.6),
+                     rgba(20,20,20, 0.6)),
+                     url(../img/turing.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  z-index: 1000;
+  position: relative;
+  margin-top: 20%;
+}
+.content {
+  background-color: rgba();
+  width: 35%;
+  text-align: left;
+  margin: auto;
+}
+.content-header {
+  font-size: 2rem;
+  padding-top: 12vh;
+  color: #FFC300
+}
+.disclosure {
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 2rem;
+  line-height: 1.5rem;
+}
+
+/* FOOTER */
+.footer {
+  z-index: 1000;
+  font-size: 1.5rem;
+  position: relative;
+  padding: 0.3rem;
+  background-color: black;
+  text-align: center;
+}
+.footer-content {
+  color: #FFC300;
+  font-size: 1.2rem;
+  margin: 2.8rem;
+  opacity: 0.5;
+}
+.footer-content span {
+  font-style: italic;
+}
