@@ -115,19 +115,22 @@ p span {
 
 /* FOOTER */
 .footer {
-  z-index: 1000;
-  font-size: 1.5rem;
-  position: relative;
-  padding: 0.3rem;
   background-color: black;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  position: relative;
   text-align: center;
+  z-index: 1000;
 }
 .footer-content {
   color: #FFC300;
   font-size: 1.2rem;
-  margin: 2.8rem;
-  opacity: 0.5;
+  margin: 1.5rem;
+  opacity: 0.8;
 }
 .footer-content span {
   font-style: italic;
+}
+.icon {
+  margin: 0 0.5rem;
 }
