@@ -4,10 +4,14 @@ layout: default
 
 <!-- add financial and health compliance -->
 <!-- add social work -->
-
+<div class="nav-links">
+  <a href="#home">Home</a>
+  <a href="#snapshot">Snapshot</a>
+  <a href="#projects">Projects</a>
+  <a href="#community">Community</a>
+</div>
 <div class="content-container">
-
-  <div class="hero">
+  <div id="home" class="hero">
     <a href="/">
       <div class="logo">Kris Sparks<span>Software Developer</span></div>
     </a>
@@ -17,7 +21,6 @@ layout: default
 
     <div class="footer floating">
       <div class="footer-content">
-        <!-- <span>"If a machine is expected to be infallible, it cannot also be intelligent."</span> - Alan Turing -->
         <a href="https://www.linkedin.com/in/kbs5280/" target="_blank">
           <i class="fab fa-linkedin fa-2x icon"></i>
         </a>
@@ -35,7 +38,7 @@ layout: default
     </div>
 
   </div>
-  <div class="snapshot-container">
+  <div id="snapshot" class="snapshot-container">
     <div class="content" id="content">
       <div class="content-header">
         Snapshot
@@ -72,7 +75,7 @@ layout: default
         and Ruby.</span>
       </p>
   </div>
-    <div class="projects-container">
+    <div id="projects" class="projects-container">
       <div class="content">
         <div class="content-header">
           Projects
@@ -123,3 +126,42 @@ layout: default
   </div>
 
 </div>
+
+<script>
+// Select all links with hashes
+$('a[href*="#"]')
+// Remove links that don't actually link to anything
+.not('[href="#"]')
+.not('[href="#0"]')
+.click(function(event) {
+  // On-page links
+  if (
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+    &&
+    location.hostname == this.hostname
+  ) {
+    // Figure out element to scroll to
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    // Does a scroll target exist?
+    if (target.length) {
+      // Only prevent default if animation is actually gonna happen
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000, function() {
+        // Callback after animation
+        // Must change focus!
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) { // Checking if the target was focused
+          return false;
+        } else {
+          $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+          $target.focus(); // Set focus again
+        };
+      });
+    }
+  }
+});
+</script>

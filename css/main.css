@@ -18,6 +18,33 @@ a {
   color: #FFC300;
   text-decoration: none;
 }
+a:hover {
+  opacity: 0.5;
+}
+a:active {
+  opacity: 0.5;
+}
+
+/* NAV LINKS */
+.nav-links{
+  padding: 1.3rem 0;
+  text-align: center;
+  z-index: 2000;
+  background-color:rgba(0, 0, 0, 0.7);
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+/* .nav-links a:first-child {
+  color: red;
+} */
+.nav-links a {
+  margin: 0 1%;
+}
+.nav-links > a ~ a {
+  border-left: 1px solid #FFC300;
+  padding-left: 2%;
+}
 
 /* HERO AND LOGO */
 .hero {
@@ -78,13 +105,13 @@ a {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
   z-index: 1000;
   position: relative;
 }
 .projects-container {
-  height: 82.5rem;
+  height: 77rem;
   background: linear-gradient(
                      rgba(20,20,20, 0.6),
                      rgba(20,20,20, 0.6)),
@@ -93,9 +120,9 @@ a {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
-  z-index: 1000;
+  z-index: 2;
   position: relative;
   margin-top: 20%;
 }
@@ -119,12 +146,12 @@ a {
 
 /* FOOTER */
 .footer {
-  background-color: black;
+  background-color:rgba(0, 0, 0, 0.7);
   font-size: 1.5rem;
   padding: 0.3rem;
   position: relative;
   text-align: center;
-  z-index: 1000;
+  z-index: 2;
 }
 .footer-content {
   color: #FFC300;
@@ -139,7 +166,7 @@ a {
   margin: 0 0.5rem;
 }
 .floating {
-  background-color:rgba(0, 0, 0, 0.4);
+  background-color:rgba(0, 0, 0, 0.8);
   bottom: 0;
   position: fixed;
   width: 100%;
