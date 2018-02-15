@@ -24,6 +24,9 @@ a:hover {
 a:active {
   opacity: 0.5;
 }
+img {
+  max-width: 100%;
+}
 
 /* NAV LINKS */
 .nav-links{
@@ -55,11 +58,11 @@ a:active {
                      rgba(20,20,20, 0.6)),
                      url(../img/macbook.jpg);
   background-attachment: fixed;
-  background-size: cover;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-position: center center;
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
@@ -101,12 +104,12 @@ a:active {
                      rgba(20,20,20, 0.6),
                      rgba(20,20,20, 0.6)),
                      url(../img/yeti.jpg);
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+   background-attachment: fixed;
+   background-position: center center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
   z-index: 1000;
   position: relative;
 }
@@ -116,12 +119,12 @@ a:active {
                      rgba(20,20,20, 0.6),
                      rgba(20,20,20, 0.6)),
                      url(../img/turing.jpg);
-  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-size: cover;
   z-index: 2;
   position: relative;
   margin-top: 20%;
@@ -173,4 +176,18 @@ a:active {
   bottom: 0;
   position: fixed;
   width: 100%;
+}
+@media (max-width: 800px) {
+  p {
+    font-size: 2.4rem;
+  }
+  .logo {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 2rem;
+  }
+  .content-header {
+    font-size: 3rem;
+  }
 }
