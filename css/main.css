@@ -1,3 +1,7 @@
+:root {
+  --burnt-orange: #FFC300;
+}
+
 html {
   background-color: black;
 }
@@ -15,7 +19,7 @@ p span {
   font-weight: 300;
 }
 a {
-  color: #FFC300;
+  color: var(--burnt-orange);
   text-decoration: none;
 }
 a:hover {
@@ -45,7 +49,7 @@ img {
   margin: 0 1%;
 }
 .nav-links > a ~ a {
-  border-left: 1px solid #FFC300;
+  border-left: 1px solid var(--burnt-orange);;
   padding-left: 2%;
 }
 
@@ -91,7 +95,7 @@ img {
   padding-left: 2rem;
 }
 .subtitle {
-  color: #FFC300;
+  color: var(--burnt-orange);
   font-size: 1.5rem;
   top: 33rem;
   letter-spacing: 0.15rem;
@@ -114,7 +118,7 @@ img {
   position: relative;
 }
 .projects-container {
-  height: 77rem;
+  height: 79rem;
   background: linear-gradient(
                      rgba(20,20,20, 0.6),
                      rgba(20,20,20, 0.6)),
@@ -138,7 +142,7 @@ img {
 .content-header {
   font-size: 2rem;
   padding-top: 12vh;
-  color: #FFC300
+  color: var(--burnt-orange);
 }
 .disclosure {
   font-style: italic;
@@ -160,7 +164,7 @@ img {
   height: 5rem;
 }
 .footer-content {
-  color: #FFC300;
+  color: var(--burnt-orange);
   font-size: 1.2rem;
   margin: 1.5rem;
   opacity: 0.8;
