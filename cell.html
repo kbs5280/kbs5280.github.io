@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<script>
+var home = {
+              $cell: true,
+              $type: 'div',
+              class: 'home',
+              $components: [{
+                $type: 'div',
+                class: 'hero',
+                $components: [
+                  { $type: 'div',
+                    class: 'logo',
+                    $text: 'Kris Sparks',
+                    $components: [
+                      {$type: 'div', class: 'logo', $text: 'Kris Sparks'},
+                      {$type: 'span', $text: 'Software Developer'}
+                    ]
+                }]
+              }]
+}
+</script>

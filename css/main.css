@@ -1,3 +1,7 @@
+:root {
+  --burnt-orange: #FFC300;
+}
+
 html {
   background-color: black;
 }
@@ -15,8 +19,38 @@ p span {
   font-weight: 300;
 }
 a {
-  color: #FFC300;
+  color: var(--burnt-orange);
   text-decoration: none;
+}
+a:hover {
+  opacity: 0.5;
+}
+a:active {
+  opacity: 0.5;
+}
+img {
+  max-width: 100%;
+}
+
+/* NAV LINKS */
+.nav-links{
+  padding: 1.3rem 0;
+  text-align: center;
+  z-index: 2000;
+  background-color:rgba(0, 0, 0, 0.7);
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+/* .nav-links a:first-child {
+  color: red;
+} */
+.nav-links a {
+  margin: 0 1%;
+}
+.nav-links > a ~ a {
+  border-left: 1px solid var(--burnt-orange);;
+  padding-left: 2%;
 }
 
 /* HERO AND LOGO */
@@ -28,11 +62,11 @@ a {
                      rgba(20,20,20, 0.6)),
                      url(../img/macbook.jpg);
   background-attachment: fixed;
-  background-size: cover;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-position: center center;
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
@@ -61,7 +95,7 @@ a {
   padding-left: 2rem;
 }
 .subtitle {
-  color: #FFC300;
+  color: var(--burnt-orange);
   font-size: 1.5rem;
   top: 33rem;
   letter-spacing: 0.15rem;
@@ -74,28 +108,28 @@ a {
                      rgba(20,20,20, 0.6),
                      rgba(20,20,20, 0.6)),
                      url(../img/yeti.jpg);
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+   background-attachment: fixed;
+   background-position: center center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
   z-index: 1000;
   position: relative;
 }
 .projects-container {
-  height: 82.5rem;
+  height: 79rem;
   background: linear-gradient(
                      rgba(20,20,20, 0.6),
                      rgba(20,20,20, 0.6)),
                      url(../img/turing.jpg);
-  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  z-index: 1000;
+  background-size: cover;
+  z-index: 2;
   position: relative;
   margin-top: 20%;
 }
@@ -108,7 +142,7 @@ a {
 .content-header {
   font-size: 2rem;
   padding-top: 12vh;
-  color: #FFC300
+  color: var(--burnt-orange);
 }
 .disclosure {
   font-style: italic;
@@ -119,15 +153,18 @@ a {
 
 /* FOOTER */
 .footer {
-  background-color: black;
+  background-color:rgba(0, 0, 0, 0.7);
   font-size: 1.5rem;
   padding: 0.3rem;
-  position: relative;
   text-align: center;
-  z-index: 1000;
+  z-index: 2;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
 }
 .footer-content {
-  color: #FFC300;
+  color: var(--burnt-orange);
   font-size: 1.2rem;
   margin: 1.5rem;
   opacity: 0.8;
@@ -139,8 +176,22 @@ a {
   margin: 0 0.5rem;
 }
 .floating {
-  background-color:rgba(0, 0, 0, 0.4);
+  background-color:rgba(0, 0, 0, 0.7);
   bottom: 0;
   position: fixed;
   width: 100%;
+}
+@media (max-width: 800px) {
+  p {
+    font-size: 2.4rem;
+  }
+  .logo {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 2rem;
+  }
+  .content-header {
+    font-size: 3rem;
+  }
 }
